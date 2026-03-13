@@ -1,0 +1,58 @@
+list of tourdot nodes with (stringdb common name):
+UBP14
+UVI4
+SKIP
+GTL1
+RBR (RBR1)
+E2Fa
+CCS52A1 (FZR2)
+APC/C (the following indented nodes are a part of APC/C):
+    CDC20-6
+    CDC20-5
+    CDC20-4
+    UBC19
+    CDC20-3
+    CDC20-2
+        GIG1(?)
+    CDC20-1
+E2Fb
+E2Fc
+    SKP2A(?)
+MED16
+DEL1
+CCS52A2
+CYCA2;3
+CDKB1;1
+    MMS21(?)
+        SCE1(?)
+            PIAL1(?)
+            PIAL2(?)
+    EBP1(?)
+CYCL1 (Not on stringdb)
+CDKG2 (Not on stringdb)
+LMI1 (Not on stringdb)
+WEE1
+FBL17
+SOG1
+SCL28
+    SCL28-2(?)
+SIM
+    RECQSIM(?)
+    SMR1(?)
+    SMR2(?)
+SRM (Not on stringdb)
+KRP (Not on stringdb)
+KRP2 
+    PBP1-2(?)
+    RKP(?)
+CYC
+CDKA1 (CDKA-1)
+    MYB88(?)
+        CDKB1-2(?)
+        FAMA(?)
+            SCRM(?) <- here I may be getting too far away from endoreduplication (STOP)
+            SCRM2(?)
+    MYB124(?)
+    KRP3(?)
+    KRP4(?)
+    KRP7(?)

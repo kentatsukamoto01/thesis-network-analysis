@@ -1,0 +1,18 @@
+list of dna endoreduplication GO term nodes (from ProteinWeaver) with stringdb common name:
+DPB
+CDKA-1
+E2FC
+CDC6
+CYCD5-1
+CYCA2-1
+CDKB1-1
+UPL3
+KRP2
+CKS1
+TCP15
+E2FE
+PYM
+BIN4
+FZR2
+CYCA2-3
+SIM
