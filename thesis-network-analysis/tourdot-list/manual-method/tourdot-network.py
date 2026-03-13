@@ -5,13 +5,13 @@ import numpy as np
 
 # List of TSV files to include in the network
 # Add or remove files from this list to include/exclude them in the visualization
-tsv_files = ['BASL.tsv', 'CCS52A2.tsv', 'CDC20-1.tsv', 'CDC20-2.tsv', 'CDC20-3.tsv', 'CDC20-4.tsv', 'CDC20-5.tsv', 'CDC20-6.tsv', 'CDKA-1.tsv', 'CDKB1-2.tsv', 'CDKB1;1.tsv', 'CYC.tsv', 'CYCA2;3.tsv', 'DEL1.tsv', 'E2Fa.tsv', 'E2Fb.tsv', 'E2Fc.tsv', 'EBP1.tsv', 'FAMA.tsv', 'FBL17.tsv', 'FZR2.tsv', 'GIG1.tsv', 'GTL1.tsv', 'KRP2.tsv', 'KRP3.tsv', 'KRP4.tsv', 'KRP7.tsv', 'MED16.tsv', 'MMS21.tsv', 'MYB124.tsv', 'MYB88.tsv', 'PBP1-2.tsv', 'PIAL1.tsv', 'PIAL2.tsv', 'PL1.tsv', 'RBR1.tsv', 'RECQSIM.tsv', 'RKP.tsv', 'SCE1.tsv', 'SCL28-2.tsv', 'SCL28.tsv', 'SIM.tsv', 'SKIP.tsv', 'SKP2A.tsv', 'SMR1.tsv', 'SMR2.tsv', 'SOG1.tsv', 'SPCH.tsv', 'UBC19.tsv', 'UBP14.tsv', 'UVI4.tsv', 'WEE1.tsv']
+tsv_files = ['BASL.tsv', 'CCS52A2.tsv', 'CDC20-1.tsv', 'CDC20-2.tsv', 'CDC20-3.tsv', 'CDC20-4.tsv', 'CDC20-5.tsv', 'CDC20-6.tsv', 'CDKA-1.tsv', 'CDKB1-2.tsv', 'CDKB1;1.tsv', 'CAS1.tsv', 'CYCA2;3.tsv', 'DEL1.tsv', 'E2Fa.tsv', 'E2Fb.tsv', 'E2Fc.tsv', 'EBP1.tsv', 'FAMA.tsv', 'FBL17.tsv', 'FZR2.tsv', 'GIG1.tsv', 'GTL1.tsv', 'KRP2.tsv', 'KRP3.tsv', 'KRP4.tsv', 'KRP7.tsv', 'MED16.tsv', 'MMS21.tsv', 'MYB124.tsv', 'MYB88.tsv', 'PBP1-2.tsv', 'PL1.tsv', 'RBR1.tsv', 'RECQSIM.tsv', 'RKP.tsv', 'SCL28-2.tsv', 'SCL28.tsv', 'SIM.tsv', 'SKIP.tsv', 'SKP2A.tsv', 'SMR1.tsv', 'SMR2.tsv', 'SOG1.tsv', 'SPCH.tsv', 'UBC19.tsv', 'UBP14.tsv', 'UVI4.tsv', 'WEE1.tsv', 'ATPK1.tsv', 'E2Fd.tsv', 'PYM.tsv', 'ATXR6.tsv', 'CYCL1-1.tsv', 'CDKG1.tsv', 'RS2Z33.tsv', 'SMR5.tsv', 'KRP1.tsv', 'KRP1-2.tsv', 'SKP2B.tsv']
 
 # Column names for the TSV files
 column_names = ['node1', 'node2', 'node1_string_id', 'node2_string_id', 'neighborhood_on_chromosome', 'gene_fusion', 'phylogenetic_cooccurrence', 'homology', 'coexpression', 'experimentally_determined_interaction', 'database_annotated', 'automated_textmining', 'combined_score']
 
 # Tsv files whose nodes should be colored red
-red_node_files = ['SKP2A.tsv', 'MMS21.tsv', 'SCE1.tsv', 'PIAL1.tsv', 'PIAL2.tsv', 'EBP1.tsv', 'SCL28-2.tsv', 'RECQSIM.tsv', 'SMR1.tsv', 'SMR2.tsv', 'PBP1-2.tsv', 'RKP.tsv', 'MYB88.tsv', 'CDKB1-2.tsv', 'FAMA.tsv', 'MYB124.tsv', 'KRP3.tsv', 'KRP4.tsv', 'KRP7.tsv', 'GIG1.tsv']
+red_node_files = ['SKP2A.tsv', 'MMS21.tsv', 'EBP1.tsv', 'SCL28-2.tsv', 'RECQSIM.tsv', 'SMR2.tsv', 'PBP1-2.tsv', 'RKP.tsv', 'MYB88.tsv', 'CDKB1-2.tsv', 'FAMA.tsv', 'MYB124.tsv', 'KRP3.tsv', 'KRP4.tsv', 'KRP7.tsv', 'GIG1.tsv', 'ATPK1.tsv', 'E2Fd.tsv', 'ATXR6.tsv', 'RS2Z33.tsv', 'SKP2B.tsv']
 
 # Load and combine all TSV files, tracking nodes from red files
 all_data = []
