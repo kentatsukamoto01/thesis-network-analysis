@@ -6,9 +6,9 @@ import matplotlib.patches as mpatches
 from pathlib import Path
 
 # File paths
-network_file = 'tourdot-filtered-network.tsv'
+network_file = 'tourdot-filtered-network-2.tsv'
 nodes_file = 'tourdot-notes-filter.txt'
-output_file = 'tourdot-filtered-network.png'
+output_file = 'tourdot-filtered-network-2.png'
 
 print("Loading nodes of interest...")
 nodes_of_interest = set()
@@ -41,19 +41,23 @@ with open(network_file, 'r') as f:
 
 print(f"Loaded {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
 
-# Create layout
+# Create layout using Kamada-Kawai for better separation
 print("Computing network layout (this may take a moment)...")
-pos = nx.spring_layout(G, k=2, iterations=50, seed=42)
+try:
+    pos = nx.kamada_kawai_layout(G, scale=2)
+except:
+    # Fallback to spring layout with improved parameters
+    pos = nx.spring_layout(G, k=3, iterations=100, seed=42, scale=2)
 
 # Create figure
-fig, ax = plt.subplots(figsize=(20, 20), dpi=150)
+fig, ax = plt.subplots(figsize=(24, 24), dpi=150)
+
+# Draw edges
+nx.draw_networkx_edges(G, pos, ax=ax, edge_color='gray', width=0.5, alpha=0.3)
 
 # Separate nodes into categories
 nodes_of_interest_in_graph = [node for node in G.nodes() if node in nodes_of_interest]
 other_nodes = [node for node in G.nodes() if node not in nodes_of_interest]
-
-# Draw edges
-nx.draw_networkx_edges(G, pos, ax=ax, edge_color='gray', width=0.5, alpha=0.3)
 
 # Draw nodes
 nx.draw_networkx_nodes(G, pos, nodelist=other_nodes, node_color='lightblue', 
