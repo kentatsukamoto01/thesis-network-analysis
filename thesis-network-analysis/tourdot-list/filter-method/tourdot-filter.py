@@ -6,8 +6,8 @@ import sys
 
 # File paths
 links_file = '3702-full-UniProt-GN-Name.tsv'
-nodes_file = 'tourdot-notes-filter.txt'
-output_file = 'tourdot-filtered-network-3.tsv'
+nodes_file = 'tourdot-notes-filter-revised.txt'
+output_file = 'tourdot-filtered-network-revised.tsv'
 
 print("Loading nodes of interest...")
 # Read the nodes of interest

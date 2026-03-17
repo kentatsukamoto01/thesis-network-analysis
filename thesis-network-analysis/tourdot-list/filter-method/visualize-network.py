@@ -6,9 +6,9 @@ import matplotlib.patches as mpatches
 from pathlib import Path
 
 # File paths
-network_file = 'tourdot-filtered-network-3.tsv'
-nodes_file = 'tourdot-notes-filter.txt'
-output_file = 'tourdot-filtered-network-3.png'
+network_file = 'tourdot-filtered-network-revised.tsv'
+nodes_file = 'tourdot-notes-filter-revised.txt'
+output_file = 'tourdot-filtered-network-revised.png'
 
 print("Loading nodes of interest...")
 nodes_of_interest = set()
